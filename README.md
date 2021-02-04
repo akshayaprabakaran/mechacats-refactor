@@ -1,5 +1,5 @@
 # Mechacats 
-Mechacats is a mechanical cat model written in Ruby that supports speed and color computations of different cat breeds.
+Mechacats is a mechanical cat model written in Ruby that supports speed and color computations for different cat breeds.
 It is tested using Rspec, a ruby testing tool.
 
 # Refactoring Methods Followed for Mechacats
