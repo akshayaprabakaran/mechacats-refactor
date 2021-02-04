@@ -1,6 +1,5 @@
 class Mechacats
-  def initialize(type, ounces_of_catnip, voltage, charged)
-    @type = type
+  def initialize(ounces_of_catnip, voltage, charged)
     @ounces_of_catnip = ounces_of_catnip
     @voltage = voltage
     @charged = charged
