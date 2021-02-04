@@ -37,12 +37,4 @@ class Mechacats
   def compute_base_speed_for_voltage(voltage)
     [24.0, voltage * base_speed].min
   end
-
-  def load_factor
-    9.0
-  end
-
-  def base_speed
-    12.0
-  end
 end
