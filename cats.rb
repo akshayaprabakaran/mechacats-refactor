@@ -16,3 +16,7 @@ end
 
 #subclass Orange_tabby inherits from Mechacats super-class
 class Orange_tabby < Mechacats
+  def speed
+    return @base_speed
+  end
+end
