@@ -10,6 +10,7 @@ class Mechacats
   end
 
   def speed
+    #for cat breeds without specific speed computation 
     nil
   end
 
