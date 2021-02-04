@@ -31,7 +31,7 @@ class Somali < Mechacats
       if @voltage < 5 
         return 'orange and white' 
       end
-      #if voltage == 5
+      #if voltage equals 5
       return nil    
     }
   end
