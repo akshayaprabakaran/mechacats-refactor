@@ -13,3 +13,6 @@ class Somali < Mechacats
     return (@charged) ? 0 : compute_base_speed_for_voltage
   end
 end
+
+#subclass Orange_tabby inherits from Mechacats super-class
+class Orange_tabby < Mechacats
