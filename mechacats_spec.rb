@@ -3,7 +3,7 @@ require_relative './mechacats'
 require_relative './cats.rb'
 
 RSpec.describe Mechacats do
-   #test suite for verifying speed method
+  #test suite for verifying speed method
   describe 'Speed Check' do
     #tests for Somali's speed method 
     describe 'Somali' do
@@ -127,10 +127,10 @@ RSpec.describe Mechacats do
     end
 
     #tests for Maine Coon's color method
-     describe 'Maine Coon' do
-      it 'returns nil' do
-        cat = Maine_coon.new(1, 1, false)
-        expect(cat.speed).to eq(nil)
+    describe 'Maine Coon' do
+      it 'returns lightning' do
+        cat = Maine_coon.new(1, 1, true)
+        expect(cat.color).to eq(lightning)
       end
     end
   end
