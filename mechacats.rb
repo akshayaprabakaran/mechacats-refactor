@@ -4,14 +4,17 @@ class Mechacats
     @ounces_of_catnip = ounces_of_catnip
     @voltage = voltage
     @charged = charged
+    #refactored private methods to instance variables(private)
+    @base_speed = 12.0 
+    @load_factor = 9.0
   end
 
   def speed
     case @type
     when :orange_tabby
-      return base_speed
+      return @base_speed
     when :bombay
-      return [0, base_speed - load_factor * @ounces_of_catnip].max
+      return [0, @base_speed - @load_factor * @ounces_of_catnip].max
     when :somali
       return (@charged) ? 0 : compute_base_speed_for_voltage(@voltage)
     end
