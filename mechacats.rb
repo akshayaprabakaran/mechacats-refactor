@@ -16,8 +16,12 @@ class Mechacats
 
   def color
     return 'lightning' if @charged
-    'orange white brown and gray'
+    #if block exists yield catches and executes
+    if block_given?
+      yield
     end
+    #else returns 
+    return 'orange white brown and gray'
   end
 
   private
