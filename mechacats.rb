@@ -13,8 +13,6 @@ class Mechacats
     case @type
     when :orange_tabby
       return @base_speed
-    when :somali
-      return (@charged) ? 0 : compute_base_speed_for_voltage
     end
 
     nil
