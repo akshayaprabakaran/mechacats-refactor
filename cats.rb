@@ -1,3 +1,5 @@
+require File.expand_path('../mechacats.rb', __FILE__)
+
 #subclass Bombay inherits from Mechacats super-class
 class Bombay < Mechacats
   def speed
