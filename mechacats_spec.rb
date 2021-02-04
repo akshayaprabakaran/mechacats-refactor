@@ -53,30 +53,40 @@ RSpec.describe Mechacats do
     end
   end
 
-  describe '#color' do
-    it 'returns the right color' do
-      cat = Orange_tabby.new(1, 1, true)
-      expect(cat.color).to eq('lightning')
+  #test suite for verifying color method
+  describe 'Color Check' do
+    #tests for Somali's color method 
+    describe 'Somali' do
+      it 'returns right color - orange' do
+        cat = Somali.new(1, 6, false)
+        expect(cat.color).to eq('orange')
+      end
+       
+      it 'returns right color - orange and white' do
+        cat = Somali.new(1, 4, false)
+        expect(cat.color).to eq('orange and white')
+      end
     end
-
-    it 'returns the right color' do
-      cat = Orange_tabby.new(1, 1, false)
-      expect(cat.color).to eq('orange white brown and gray')
+    
+    #tests for Bombay's color method 
+    describe 'Bombay' do
+      it 'returns right color - black' do
+        cat = Bombay.new(1, 1, false)
+        expect(cat.color).to eq('black')
+      end
     end
-
-    it 'returns the right color' do
-      cat = Bombay.new(1, 1, false)
-      expect(cat.color).to eq('black')
-    end
-
-    it 'returns the right color' do
-      cat = Somali.new(1, 6, false)
-      expect(cat.color).to eq('orange')
-    end
-
-    it 'returns the right color' do
-      cat = Somali.new(1, 4, false)
-      expect(cat.color).to eq('orange and white')
+     
+    #tests for Orange Tabby's color method 
+    describe 'Orange Tabby' do
+      it 'returns right color - orange white brown and gray' do
+        cat = Orange_tabby.new(1, 1, false)
+        expect(cat.color).to eq('orange white brown and gray')
+      end
+      
+      it 'returns right color - lightning' do
+        cat = Orange_tabby.new(1, 1, true)
+        expect(cat.color).to eq('lightning')
+      end
     end
   end
 end
