@@ -16,7 +16,7 @@ class Mechacats
     when :bombay
       return [0,compute_catnip_speed].max
     when :somali
-      return (@charged) ? 0 : compute_base_speed_for_voltage(@voltage)
+      return (@charged) ? 0 : compute_base_speed_for_voltage
     end
 
     nil
@@ -42,7 +42,7 @@ class Mechacats
     return @base_speed - @load_factor * @ounces_of_catnip
   end
 
-  def compute_base_speed_for_voltage(voltage)
+  def compute_base_speed_for_voltage
     [24.0, voltage * base_speed].min
   end
 end
