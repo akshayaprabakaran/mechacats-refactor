@@ -128,7 +128,7 @@ RSpec.describe Mechacats do
 
     #tests for Maine Coon's color method
     describe 'Maine Coon' do
-      it 'returns lightning' do
+      it 'returns right color - lightning' do
         cat = Maine_coon.new(1, 1, true)
         expect(cat.color).to eq('lightning')
       end
