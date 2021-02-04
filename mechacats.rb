@@ -14,7 +14,7 @@ class Mechacats
     when :orange_tabby
       return @base_speed
     when :bombay
-      return [0, @base_speed - @load_factor * @ounces_of_catnip].max
+      return [0,compute_catnip_speed].max
     when :somali
       return (@charged) ? 0 : compute_base_speed_for_voltage(@voltage)
     end
@@ -36,6 +36,11 @@ class Mechacats
   end
 
   private
+  #extract method refactoring pattern
+  #compute speed based on catnip quantity
+  def compute_catnip_speed
+    return @base_speed - @load_factor * @ounces_of_catnip
+  end
 
   def compute_base_speed_for_voltage(voltage)
     [24.0, voltage * base_speed].min
