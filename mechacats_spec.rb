@@ -1,5 +1,6 @@
 require 'rspec'
 require_relative './mechacats'
+require_relative './cats.rb'
 
 RSpec.describe Mechacats do
   describe '#speed' do
