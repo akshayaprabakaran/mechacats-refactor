@@ -6,7 +6,6 @@ class Bombay < Mechacats
   end
   
   def color
-       return 'lightning' if @charged
        'black'      
   end
 end
@@ -19,8 +18,6 @@ class Somali < Mechacats
   end
   
   def color
-      return 'lightning' if @charged
-
       if @voltage > 5 
         then return 'orange' 
       end
