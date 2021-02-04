@@ -43,6 +43,15 @@ RSpec.describe Mechacats do
         expect(cat.speed).to eq(12)
       end
     end
+     
+    #tests for Siamese's speed method
+    describe 'Siamese' do
+      #testing by passing negative values  
+      it 'returns 60' do
+        cat = Siamese.new(-2, 1, false)
+        expect(cat.speed).to eq(60)
+      end
+    end
     
     #tests for Maine Coon's speed method 
     describe 'Maine Coon' do
@@ -62,6 +71,16 @@ RSpec.describe Mechacats do
         expect(cat.color).to eq('orange')
       end
        
+      it 'returns right color - lightning' do
+        cat = Somali.new(1, 6, true)
+        expect(cat.color).to eq('lightning')
+      end
+
+      it 'returns right color - nil' do
+        cat = Somali.new(1, 5, false)
+        expect(cat.color).to eq(nil)
+      end
+       
       it 'returns right color - orange and white' do
         cat = Somali.new(1, 4, false)
         expect(cat.color).to eq('orange and white')
@@ -73,6 +92,11 @@ RSpec.describe Mechacats do
       it 'returns right color - black' do
         cat = Bombay.new(1, 1, false)
         expect(cat.color).to eq('black')
+      end
+      
+      it 'returns right color - lightning' do
+        cat = Bombay.new(1, 1, true)
+        expect(cat.color).to eq('lightning')
       end
     end
      
@@ -86,6 +110,27 @@ RSpec.describe Mechacats do
       it 'returns right color - lightning' do
         cat = Orange_tabby.new(1, 1, true)
         expect(cat.color).to eq('lightning')
+      end
+    end
+    
+    #tests for Siamese's color method
+    describe 'Siamese' do
+      it 'returns right color - orange white brown and gray' do
+        cat = Siamese.new(1, 1, false)
+        expect(cat.color).to eq('orange white brown and gray')
+      end
+
+      it 'returns right color - lightning' do
+        cat = Siamese.new(1, 2, true)
+        expect(cat.color).to eq('lightning')
+      end
+    end
+
+    #tests for Maine Coon's color method
+     describe 'Maine Coon' do
+      it 'returns nil' do
+        cat = Maine_coon.new(1, 1, false)
+        expect(cat.speed).to eq(nil)
       end
     end
   end
