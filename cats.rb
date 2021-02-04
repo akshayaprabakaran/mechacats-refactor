@@ -4,3 +4,7 @@ class Bombay < Mechacats
     #call speed computation(catnip)method and find maximum 
     return [0, compute_catnip_speed].max 
   end
+end
+
+#subclass Somali inherits from Mechacats super-class
+class Somali < Mechacats
