@@ -41,3 +41,15 @@ class Orange_tabby < Mechacats
     return @base_speed
   end
 end
+
+#subclass Maine_coon inherits from Mechacats super-class
+class Maine_coon < Mechacats
+end
+
+#subclass Siamese inherits from Mechacats super-class
+class Siamese < Mechacats
+  def speed
+    #call speed computation(catnip) method and find maximum 
+    return [0, 2 * compute_catnip_speed].max
+  end
+end
