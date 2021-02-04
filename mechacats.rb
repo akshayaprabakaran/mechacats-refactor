@@ -30,7 +30,8 @@ class Mechacats
   def compute_catnip_speed
     return @base_speed - @load_factor * @ounces_of_catnip
   end
-
+  
+  #compute speed based on voltage
   def compute_base_speed_for_voltage
     [24.0, voltage * @base_speed].min
   end
