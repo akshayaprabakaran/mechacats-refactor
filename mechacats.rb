@@ -33,6 +33,6 @@ class Mechacats
   
   #compute speed based on voltage
   def compute_base_speed_for_voltage
-    [24.0, voltage * @base_speed].min
+    [24.0, @voltage * @base_speed].min
   end
 end
