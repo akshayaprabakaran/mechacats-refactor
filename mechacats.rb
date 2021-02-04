@@ -16,14 +16,7 @@ class Mechacats
 
   def color
     return 'lightning' if @charged
-
-    if @type == :bombay
-      'black'
-    elsif @type == :somali
-      if @voltage > 5 then return 'orange' end
-      if @voltage < 5 then return 'orange and white' end
-    else
-      'orange white brown and gray'
+    'orange white brown and gray'
     end
   end
 
