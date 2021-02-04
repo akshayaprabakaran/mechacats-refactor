@@ -6,7 +6,10 @@ class Bombay < Mechacats
   end
   
   def color
-       'black'      
+    #Bombay cat's color computation block passed through super keyword
+    super { 
+      return 'black'
+    }          
   end
 end
 
@@ -18,14 +21,17 @@ class Somali < Mechacats
   end
   
   def color
+    #Somali cat's color computation block passed through super keyword
+    super { 
       if @voltage > 5 
-        then return 'orange' 
+        return 'orange' 
       end
       if @voltage < 5 
-        then return 'orange and white' 
+        return 'orange and white' 
       end
-      #voltage = 5
-      nil   
+      #if voltage == 5
+      return nil    
+    }
   end
 end
 
