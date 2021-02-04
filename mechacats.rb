@@ -15,6 +15,7 @@ class Mechacats
   end
 
   def color
+    #compute color based on charge status
     return 'lightning' if @charged
     #if block exists yield catches and executes
     if block_given?
