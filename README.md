@@ -10,7 +10,7 @@ It is tested using Rspec, a ruby testing tool.
     
   Generally it is considered a code smell when there is a lengthy method. So to minimise the body of the speed method's bombay switch case, I moved the (catnip quanity based speed computation method) code to a separate new method and replaced the old code with a call to the method.
 
-  Often code found in methods *enhance/support resuability*. 
+  Often code found in methods *enhance/support resuability*. For example, if the same catnip based computation is required for another class ( I created Maine_coon class to show the resuability offered by this pattern), it can be reused just by calling the method.
 
 **Refactor Methods :**
 
