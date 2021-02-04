@@ -10,11 +10,6 @@ class Mechacats
   end
 
   def speed
-    case @type
-    when :orange_tabby
-      return @base_speed
-    end
-
     nil
   end
 
