@@ -52,7 +52,7 @@ It is tested using Rspec, a ruby testing tool.
   
   * The existing code tests for voltage value either > or < 5 but not equal to 5. Hence I have wriiten a test case where voltage equals 5.
   
-  * Further I organized the Rspec based speed check and color check by grouping each cat breed. This helps in a quick understanding of what the test results indicate.
+  * Further I organized the Rspec based on speed check and color check by grouping each cat breed. This helps in a quick understanding of what the test results indicate.
 
 # Learning Outcomes
 
