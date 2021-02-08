@@ -38,7 +38,7 @@ It is tested using Rspec, a ruby testing tool.
 
 **Aspect Oriented Programming :**
 
-  Aspect Oriented Programming is a programming paradigm that sepaartes cross-cutting concerns to improve modularity.
+  Aspect Oriented Programming is a programming paradigm that separates cross-cutting concerns to improve modularity.
   
   I utilized AOP by passing code blocks through super keyword from subclasses and used Yield to catch the code blocks and execute them. This avoided code duplication/ rewriting code multiple times.
 
